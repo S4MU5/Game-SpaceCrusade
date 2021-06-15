@@ -1,0 +1,81 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ClientHeight = 625
+  ClientWidth = 1025
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 200
+    Top = 0
+    Width = 625
+    Height = 625
+  end
+  object Panel2: TPanel
+    Left = 825
+    Top = 0
+    Width = 200
+    Height = 625
+    TabOrder = 1
+    object Image2: TImage
+      Left = 14
+      Top = 16
+      Width = 169
+      Height = 169
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 200
+    Height = 625
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 831
+    Top = 592
+    Width = 186
+    Height = 25
+    Caption = 'Exit'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 8
+    Top = 8
+    Width = 185
+    Height = 305
+    Enabled = False
+    Lines.Strings = (
+      'Memo1')
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 831
+    Top = 392
+    Width = 186
+    Height = 25
+    Caption = 'Hod'
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object ApplicationEvents1: TApplicationEvents
+    OnShortCut = ApplicationEvents1ShortCut
+    Left = 984
+    Top = 528
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 984
+    Top = 560
+  end
+end
